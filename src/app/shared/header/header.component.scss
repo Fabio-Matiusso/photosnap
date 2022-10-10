@@ -1,20 +1,24 @@
-
 .header {
-  display: flex;
   background-color: red;
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0px;
+  background-color: #f4f5f7;
 }
 
-.links {
+.list {
   display: flex;
-  gap: 40px;
+  gap: 30px;
+
+  @media (max-width: 900px){
+    display: none;
+  }
 }
 
 .btn {
+  padding: 10px 15px;
   background-color: #222;
   color: #f4f5f7;
-  padding: 8px 15px;
   font-weight: 500;
 }

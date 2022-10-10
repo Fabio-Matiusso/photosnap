@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  public srcLogo: string = '../../../../../assets/shared/desktop/logo.svg';
+  public links: Array<{ path: string; content: string }> = [
+    { path: '', content: 'STORIES' },
+    { path: '/features', content: 'FEATURES' },
+    { path: '/pricing', content: 'PRICING' },
+  ];
 
-  public menuList: string[] = ['STORIES', 'FEATURES', 'PRICING'];
+  public srcLogo: string = '../../../assets/shared/desktop/logo.svg';
 
   constructor() {}
 

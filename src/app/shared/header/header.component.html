@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="logo">
+    <a routerLink="/">
+      <img src="{{srcLogo}}" alt="Logo">
+    </a>
+  </div>
+
+  <nav>
+    <ul class="list">
+      <li *ngFor="let link of links">
+        <a routerLink='{{link.path}}'>{{link.content}}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <button class="btn">
+    GET AN INVITE
+  </button>
+</header>
