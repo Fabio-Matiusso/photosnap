@@ -1,17 +1,23 @@
 <section class="apresentation-container">
 
   <div class="cta">
-    <h1 id="title">Create and share your photo stories. </h1>
+    <div class="cta-infos" [@slideInLeftOnEnter] *ngFor="let text of apresentation">
+      <h1 id="title">{{text.title}}</h1>
 
-    <p id="desc">
-      Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.
-    </p>
+      <p id="desc">
+        {{text.description}}
+      </p>
 
-    <p>
-      GET AN INVITE -->
-    </p>
+      <div class="invite">
+        {{text.cta}}
+
+        <img src="{{text.srcArrow}}" alt="Arrow">
+      </div>
+    </div>
   </div>
 
-  <img class="img-man" src="../../../assets/home/desktop/create-and-share.jpg" alt="">
+  <div class="container-image" *ngFor="let image of manImage">
+    <img class="{{image.className}}" src="{{image.src}}" alt="man">
+  </div>
 
 </section>

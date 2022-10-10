@@ -20,6 +20,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApresentationComponent } from './shared/apresentation/apresentation.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
