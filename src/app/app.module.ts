@@ -16,6 +16,9 @@ import { ApresentationComponent } from './shared/apresentation/apresentation.com
 import { BeautifulStoriesComponent } from './shared/beautiful-stories/beautiful-stories.component';
 import { AcessibilityComponent } from './shared/acessibility/acessibility.component';
 
+import { NgsRevealModule } from 'ngx-scrollreveal';
+import { GalleryComponent } from './shared/gallery/gallery.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +30,14 @@ import { AcessibilityComponent } from './shared/acessibility/acessibility.compon
     ApresentationComponent,
     BeautifulStoriesComponent,
     AcessibilityComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
+    NgsRevealModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
