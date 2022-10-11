@@ -9,15 +9,17 @@ import { HomeComponent } from './pages/home/home.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { PricesComponent } from './pages/prices/prices.component';
 import { ErrorComponent } from './pages/error/error.component';
-import { HeaderComponent } from './shared/header/header.component';
+import { HeaderComponent } from './shared/components/generics-components/header/header.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ApresentationComponent } from './shared/apresentation/apresentation.component';
-import { BeautifulStoriesComponent } from './shared/beautiful-stories/beautiful-stories.component';
-import { AcessibilityComponent } from './shared/acessibility/acessibility.component';
+import { ApresentationComponent } from './shared/components/home-components/apresentation/apresentation.component';
+import { BeautifulStoriesComponent } from './shared/components/home-components/beautiful-stories/beautiful-stories.component';
+import { AcessibilityComponent } from './shared/components/home-components/acessibility/acessibility.component';
 
 import { NgsRevealModule } from 'ngx-scrollreveal';
-import { GalleryComponent } from './shared/gallery/gallery.component';
+import { GalleryComponent } from './shared/components/home-components/gallery/gallery.component';
+import { DetailsComponent } from './shared/components/home-components/details/details.component';
+import { FooterComponent } from './shared/components/generics-components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { GalleryComponent } from './shared/gallery/gallery.component';
     BeautifulStoriesComponent,
     AcessibilityComponent,
     GalleryComponent,
+    DetailsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

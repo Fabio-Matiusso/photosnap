@@ -1,0 +1,43 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #222;
+  color: #f4f5f7;
+  padding: 50px 0px;
+  height: 300px;
+}
+
+.container-icons-menu, .cta-copywrite {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cta-copywrite {
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-medias, .flex-icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+}

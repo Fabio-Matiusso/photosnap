@@ -1,0 +1,47 @@
+<footer class="footer">
+
+  <div class="container-icons-menu">
+    <div class="icons" *ngFor="let content of footerContent">
+
+      <img src="{{content.logo}}" alt="LOGO">
+
+      <div class="flex-icons-container">
+        <div class="icons" *ngFor="let icon of content.icons">
+          <img src="{{icon}}" alt="">
+        </div>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li>
+            HOME
+          </li>
+          <li>STORIES</li>
+          <li>FEATURES</li>
+          <li>PRICING</li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+
+  </div>
+
+  <div class="cta-copywrite">
+    <div class="cta">
+      <p>
+        GET AN INVITE
+      </p>
+
+      <img src="../../../../../assets/shared/desktop/arrow.svg" alt="flecha">
+    </div>
+
+    <div class="copy">
+      <p>
+        Copyright 2022. All Rights Reserved
+      </p>
+    </div>
+  </div>
+
+</footer>

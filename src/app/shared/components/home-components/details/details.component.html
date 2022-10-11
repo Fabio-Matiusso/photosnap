@@ -1,0 +1,15 @@
+<section class="details">
+
+  <div class="item" *ngFor="let data of datasDetails">
+    <div class="icon-container">
+      <img class="icon" src="{{data.image}}" alt="Image">
+    </div>
+
+    <h3>{{data.title}}</h3>
+
+    <p>
+      {{data.description}}
+    </p>
+  </div>
+
+</section>
