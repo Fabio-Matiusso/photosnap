@@ -1,17 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  slideInRightOnEnterAnimation,
-  slideInLeftOnEnterAnimation,
-} from 'angular-animations';
 
 @Component({
-  selector: 'app-apresentation',
-  templateUrl: './apresentation.component.html',
-  styleUrls: ['./apresentation.component.scss'],
-  animations: [slideInLeftOnEnterAnimation(), slideInRightOnEnterAnimation()],
+  selector: 'app-acessibility',
+  templateUrl: './acessibility.component.html',
+  styleUrls: ['./acessibility.component.scss'],
 })
-export class ApresentationComponent implements OnInit {
-  public apresentation: Array<{
+export class AcessibilityComponent implements OnInit {
+
+  public acessibility: Array<{
     title: string;
     description: string;
     cta: string;
@@ -28,7 +24,7 @@ export class ApresentationComponent implements OnInit {
 
   public manImage: Array<{ src: string; className?: string }> = [
     {
-      src: '../../../assets/home/desktop/zyro-image.png',
+      src: '../../../assets/home/desktop/photograph.png',
       className: 'img-man-desktop',
     },
   ];

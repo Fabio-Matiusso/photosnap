@@ -1,0 +1,23 @@
+<section class="apresentation-container">
+
+  <div class="cta">
+    <div class="cta-infos" *ngFor="let text of acessibility">
+      <h1 id="title">{{text.title}}</h1>
+
+      <p id="desc">
+        {{text.description}}
+      </p>
+
+      <div class="invite">
+        {{text.cta}}
+
+        <img src="{{text.srcArrow}}" alt="Arrow">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-image" *ngFor="let image of manImage">
+    <img class="{{image.className}}" src="{{image.src}}" alt="man">
+  </div>
+
+</section>
