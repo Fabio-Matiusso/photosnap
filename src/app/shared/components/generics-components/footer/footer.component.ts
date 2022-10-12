@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
     copy: string;
   }> = [
     {
-      logo: '../../../../../assets/shared/desktop/logo.svg',
+      logo: '../../../../../assets/shared/desktop/logo-footer.svg',
       icons: [
         '../../../../../assets/shared/desktop/facebook.svg',
         '../../../../../assets/shared/desktop/youtube.svg',
@@ -23,7 +23,7 @@ export class FooterComponent implements OnInit {
         '../../../../../assets/shared/desktop/pinterest.svg',
         '../../../../../assets/shared/desktop/instagram.svg',
       ],
-      menu: ['HOME', 'STORIES', 'FEATURES', 'PRICING'],
+      menu: ['STORIES', 'FEATURES', 'PRICING'],
       cta: 'GET AN INVITE',
       arrowIcon: '../../../../../assets/shared/desktop/arrow.svg',
       copy: 'Copyright 2022. All Rights Reserved',

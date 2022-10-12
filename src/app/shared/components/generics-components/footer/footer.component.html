@@ -1,46 +1,33 @@
-<footer class="footer">
+<footer class="footer" *ngFor="let content of footerContent">
 
   <div class="container-icons-menu">
-    <div class="icons" *ngFor="let content of footerContent">
 
-      <img src="{{content.logo}}" alt="LOGO">
+    <div class="logo-and-medias">
+      <img src="{{content.logo}}" alt="Logo">
 
-      <div class="flex-icons-container">
-        <div class="icons" *ngFor="let icon of content.icons">
-          <img src="{{icon}}" alt="">
+      <div class="medias-container">
+        <div class="medias" *ngFor="let icon of content.icons">
+          <img class="media-icon" src="{{icon}}" alt="social media">
         </div>
       </div>
 
-      <nav>
-        <ul class="menu">
-          <li>
-            HOME
-          </li>
-          <li>STORIES</li>
-          <li>FEATURES</li>
-          <li>PRICING</li>
+      <nav class="nav">
+        <ul class="menu" *ngFor="let link of content.menu">
+          <li><a routerLink="{{link.toLowerCase()}}">{{link}}</a></li>
         </ul>
       </nav>
-
     </div>
-
-
 
   </div>
 
   <div class="cta-copywrite">
-    <div class="cta">
-      <p>
-        GET AN INVITE
-      </p>
-
-      <img src="../../../../../assets/shared/desktop/arrow.svg" alt="flecha">
+    <div class="cta-footer">
+      <p class="text-cta">{{content.cta}}</p>
+      <img class="arrow" src="{{content.arrowIcon}}" alt="arrow">
     </div>
 
-    <div class="copy">
-      <p>
-        Copyright 2022. All Rights Reserved
-      </p>
+    <div class="copywrite">
+      <p>{{content.copy}}</p>
     </div>
   </div>
 
