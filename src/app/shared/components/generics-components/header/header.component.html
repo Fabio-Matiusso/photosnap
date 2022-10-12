@@ -5,7 +5,7 @@
     </a>
   </div>
 
-  <nav>
+  <nav class="nav-desktop">
     <ul class="list">
       <li *ngFor="let link of links">
         <a routerLink='{{link.path}}'>{{link.content}}</a>
@@ -16,4 +16,16 @@
   <button class="btn">
     GET AN INVITE
   </button>
+
+  <div class="burger" (click)="toggleMenu()" [class.is-open]="isMenuOpen">
+    <img class="burger-menu-icon" src="../../../../../assets/burger-menu.svg" alt="menu-burger">
+
+    <nav class="nav-mobile">
+      <ul class="link-mobile">
+        <li *ngFor="let link of links">
+          <a routerLink='{{link.path}}'>{{link.content}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>

@@ -15,13 +15,13 @@
   height: 150px;
 
   @media (max-width: 900px){
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    grid-column: span 12;
+    gap: 10px;
   }
 
-  @media (max-width: 600px) {
-    grid-column: span 12;
-    justify-content: center;
-  }
+  
 }
 
 .logo-and-medias {
@@ -34,12 +34,24 @@
     justify-content: center;
     align-items: center;
   }
+}
 
+.logo {
+  max-width: 100%;
+
+  @media (max-width: 900px){
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .medias-container {
   display: flex;
   gap: 10px;
+
+  @media (max-width: 900px){
+    justify-content: center;
+  }
 }
 
 .media-icon {
@@ -55,21 +67,24 @@
   display: flex;
   flex-direction: column;
   grid-column: span 6;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-evenly;
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     grid-column: span 12;
     align-items: center;
-    gap: 80px;
-    justify-content: center;
+    padding: 20px 0px;
+    gap: 10px;
   }
 }
+
 
 .cta-footer {
   display: flex;
   gap: 20px;
   align-items: center;
+
+  
 }
 
 .arrow {

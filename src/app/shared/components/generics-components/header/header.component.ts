@@ -12,9 +12,15 @@ export class HeaderComponent implements OnInit {
     { path: '/pricing', content: 'PRICING' },
   ];
 
+  public isMenuOpen: boolean = false;
+
   public srcLogo: string = '../../../assets/shared/desktop/logo.svg';
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  public toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

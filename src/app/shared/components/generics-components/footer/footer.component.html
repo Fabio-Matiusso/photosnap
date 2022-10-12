@@ -3,7 +3,7 @@
   <div class="container-icons-menu">
 
     <div class="logo-and-medias">
-      <img src="{{content.logo}}" alt="Logo">
+      <img class="logo" src="{{content.logo}}" alt="Logo">
 
       <div class="medias-container">
         <div class="medias" *ngFor="let icon of content.icons">
@@ -11,12 +11,12 @@
         </div>
       </div>
 
-      <nav class="nav">
-        <ul class="menu" *ngFor="let link of content.menu">
-          <li><a routerLink="{{link.toLowerCase()}}">{{link}}</a></li>
-        </ul>
-      </nav>
     </div>
+    <nav class="nav">
+      <ul class="menu" *ngFor="let link of content.menu">
+        <li><a routerLink="{{link.toLowerCase()}}">{{link}}</a></li>
+      </ul>
+    </nav>
 
   </div>
 
