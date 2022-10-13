@@ -1,0 +1,33 @@
+<section *ngIf="currentRoute === '/'" class="container">
+
+  <div class="flex" *ngFor="let collection of collectionsHome" style="background-image: url({{collection.backgroundImage}});">
+
+    <h3>{{collection.title}}</h3>
+    <p>{{collection.author}}</p>
+
+    <div class="lign"></div>
+
+    <div class="cta">
+      <p class="text-cta">{{cta}}</p>
+
+      <img class="arrow" src="{{arrowIcon}}" alt="Arrow">
+    </div>
+  </div>
+</section>
+
+<section *ngIf="currentRoute === '/stories'" class="container">
+
+  <div class="flex" *ngFor="let collection of collectionsStories" style="background-image: url({{collection.backgroundImage}});">
+
+    <h3>{{collection.title}}</h3>
+    <p>{{collection.author}}</p>
+
+    <div class="lign"></div>
+
+    <div class="cta">
+      <p class="text-cta">{{cta}}</p>
+
+      <img class="arrow" src="{{arrowIcon}}" alt="Arrow">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<section class="mountain-container-bg" *ngFor="let data of mountainDatas">
+
+  <div class="info-cta">
+    <p>{{data.introduction}}</p>
+
+    <h1 class="title">{{data.title}}</h1>
+
+    <div class="data-author">
+      <p class="data">{{data.date}}</p>
+      <p class="author">{{data.author}}</p>
+    </div>
+
+    <p class="description">
+      {{data.description}}
+    </p>
+
+    <div class="invite">
+      <p class="text-cta">{{data.cta}}</p>
+
+      <img class="arrow" src="{{data.arrow}}" alt="arrow">
+    </div>
+  </div>
+</section>

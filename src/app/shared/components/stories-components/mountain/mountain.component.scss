@@ -1,0 +1,34 @@
+@import url('../../../components/home-components/acessibility/acessibility.component.scss');
+
+.mountain-container-bg {
+  background-image: url('../../../../../assets/stories/gallery/gallery-image-8.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f4f6f7;
+  padding: 150px 20px;
+}
+
+.info-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 50%;
+
+  @media (max-width: 600px) {
+    max-width: 80%;
+  }
+}
+
+.data-author {
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.data, .description {
+  font-weight: 400;
+  opacity: 0.8;
+}

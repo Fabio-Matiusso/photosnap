@@ -4,9 +4,11 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { PricesComponent } from './pages/prices/prices.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { StoriesComponent } from './pages/stories/stories.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'stories', component: StoriesComponent },
   { path: 'features', component: FeaturesComponent },
   { path: 'pricing', component: PricesComponent },
   { path: '404', component: ErrorComponent },

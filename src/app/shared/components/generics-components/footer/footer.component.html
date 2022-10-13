@@ -14,7 +14,7 @@
     </div>
     <nav class="nav">
       <ul class="menu" *ngFor="let link of content.menu">
-        <li><a routerLink="{{link.toLowerCase()}}">{{link}}</a></li>
+        <li><a routerLink="{{link.path}}">{{link.anchor}}</a></li>
       </ul>
     </nav>
 

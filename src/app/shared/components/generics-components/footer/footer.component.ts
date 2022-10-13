@@ -9,7 +9,7 @@ export class FooterComponent implements OnInit {
   public footerContent: Array<{
     logo: string;
     icons: string[];
-    menu: string[];
+    menu: Array<{ path: string; anchor: string }>;
     cta: string;
     arrowIcon: string;
     copy: string;
@@ -23,7 +23,12 @@ export class FooterComponent implements OnInit {
         '../../../../../assets/shared/desktop/pinterest.svg',
         '../../../../../assets/shared/desktop/instagram.svg',
       ],
-      menu: ['STORIES', 'FEATURES', 'PRICING'],
+      menu: [
+        { path: '/', anchor: 'HOME' },
+        { path: '/stories', anchor: 'STORIES' },
+        { path: '/features', anchor: 'FEATURES' },
+        { path: '/pricing', anchor: 'PRICING' },
+      ],
       cta: 'GET AN INVITE',
       arrowIcon: '../../../../../assets/shared/desktop/arrow.svg',
       copy: 'Copyright 2022. All Rights Reserved',

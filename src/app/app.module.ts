@@ -13,9 +13,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApresentationComponent } from './shared/components/home-components/apresentation/apresentation.component';
 import { BeautifulStoriesComponent } from './shared/components/home-components/beautiful-stories/beautiful-stories.component';
 import { AcessibilityComponent } from './shared/components/home-components/acessibility/acessibility.component';
-import { GalleryComponent } from './shared/components/home-components/gallery/gallery.component';
+import { GalleryComponent } from './shared/components/generics-components/gallery/gallery.component';
 import { DetailsComponent } from './shared/components/home-components/details/details.component';
 import { FooterComponent } from './shared/components/generics-components/footer/footer.component';
+import { StoriesComponent } from './pages/stories/stories.component';
+import { MountainComponent } from './shared/components/stories-components/mountain/mountain.component';
 
 
 
@@ -33,6 +35,8 @@ import { FooterComponent } from './shared/components/generics-components/footer/
     GalleryComponent,
     DetailsComponent,
     FooterComponent,
+    StoriesComponent,
+    MountainComponent,
   ],
   imports: [
     BrowserModule,

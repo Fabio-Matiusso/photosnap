@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public links: Array<{ path: string; content: string }> = [
-    { path: '', content: 'STORIES' },
+    { path: '', content: 'HOME' },
+    { path: '/stories', content: 'STORIES' },
     { path: '/features', content: 'FEATURES' },
     { path: '/pricing', content: 'PRICING' },
   ];
