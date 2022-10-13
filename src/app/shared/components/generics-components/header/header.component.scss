@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px 0px;
+  padding: 10px 0px;
   background-color: #f4f5f7;
-
+  position: sticky;
+  top: 0px;
+  box-shadow: 0 3px 10px #222;
 }
 
 .list {
