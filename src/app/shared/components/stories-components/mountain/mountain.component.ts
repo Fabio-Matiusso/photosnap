@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { slideInLeftOnEnterAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-mountain',
   templateUrl: './mountain.component.html',
   styleUrls: ['./mountain.component.scss'],
+  animations: [slideInLeftOnEnterAnimation()],
 })
 export class MountainComponent implements OnInit {
   public mountainDatas: Array<{
