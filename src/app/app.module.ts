@@ -19,6 +19,7 @@ import { FooterComponent } from './shared/components/generics-components/footer/
 import { StoriesComponent } from './pages/stories/stories.component';
 import { MountainComponent } from './shared/components/stories-components/mountain/mountain.component';
 import { ApresentationFeaturesComponent } from './shared/components/features-components/apresentation-features/apresentation-features.component';
+import { FeaturesDatasComponent } from './shared/components/features-components/features-datas/features-datas.component';
 
 
 
@@ -39,6 +40,7 @@ import { ApresentationFeaturesComponent } from './shared/components/features-com
     StoriesComponent,
     MountainComponent,
     ApresentationFeaturesComponent,
+    FeaturesDatasComponent,
   ],
   imports: [
     BrowserModule,
