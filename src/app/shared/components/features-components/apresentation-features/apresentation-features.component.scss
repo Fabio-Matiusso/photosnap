@@ -1,6 +1,7 @@
 .features-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  height: 700px;
 }
 
 .description {
@@ -12,8 +13,7 @@
   color: #f4f5f7;
 
   @media (max-width: 900px) {
-    padding: 70px 0px;
-    grid-row: 2;
+       grid-row: 2;
   }
 }
 
@@ -43,8 +43,7 @@
   grid-column: span 6;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 300px 0px;
-
+  
   @media (max-width: 900px){
     background: url('../../../../../assets/features/tablet/hero.png');
     background-repeat: no-repeat;
