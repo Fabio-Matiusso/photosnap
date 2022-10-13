@@ -5,27 +5,23 @@
     </a>
   </div>
 
-  <nav class="nav-desktop">
-    <ul class="list">
-      <li *ngFor="let link of links">
-        <a routerLink='{{link.path}}'>{{link.content}}</a>
+  <nav class="navbar">
+    <ul class="nav-menu" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <li class="nav-item" *ngFor="let link of links">
+        <a class="nav-link" routerLink="{{link.path}}">{{link.content}}</a>
       </li>
     </ul>
+
+    <div class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
   </nav>
 
-  <button class="btn">
+  <!-- <button class="btn">
     GET AN INVITE
-  </button>
+  </button> -->
 
-  <div class="burger" (click)="toggleMenu()" [class.is-open]="isMenuOpen">
-    <img class="burger-menu-icon" src="../../../../../assets/burger-menu.svg" alt="menu-burger">
-
-    <nav class="nav-mobile">
-      <ul class="link-mobile">
-        <li *ngFor="let link of links">
-          <a routerLink='{{link.path}}'>{{link.content}}</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
 </header>
