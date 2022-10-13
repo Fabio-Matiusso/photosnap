@@ -23,11 +23,19 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (max-width: 600px) {
+    width: 50%;
+  }
 }
 
 .title {
   font-size: 4rem;
   font-weight: 500;
+
+  @media (max-width: 600px) {
+    font-size: 3rem;
+  }
 }
 
 .image {

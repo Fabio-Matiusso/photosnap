@@ -4,6 +4,10 @@
   padding: 40px;
   gap: 30px;
   text-align: center;
+
+  @media (max-width: 600px) {
+    padding: 20px 0px;
+  }
 }
 
 .container-img {
@@ -20,6 +24,11 @@
 .description {
   font-size: 1rem;
   opacity: 0.9;
+  width: 80%;
+
+  @media (max-width: 600px) {
+    
+  }
 }
 
 .feature {
@@ -37,5 +46,6 @@
 
   @media (max-width: 600px) {
     grid-column: span 12;
+    padding: 10px 0px;
   }
 }
