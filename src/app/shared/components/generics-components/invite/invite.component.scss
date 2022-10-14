@@ -1,0 +1,36 @@
+@import url('../../../components/home-components/apresentation/apresentation.component.scss');
+
+.invite-container {
+  background-image: url('../../../../../assets/shared/desktop/bg-beta.png');
+  padding: 200px 0px;
+  background-size: cover;
+  background-position: center;
+  color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+.cta-container {
+  display: flex;
+  gap: 15px;
+
+}
+
+.title {
+  font-size: 3rem;
+  max-width: 40%;
+}
+

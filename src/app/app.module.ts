@@ -20,8 +20,7 @@ import { StoriesComponent } from './pages/stories/stories.component';
 import { MountainComponent } from './shared/components/stories-components/mountain/mountain.component';
 import { ApresentationFeaturesComponent } from './shared/components/features-components/apresentation-features/apresentation-features.component';
 import { FeaturesDatasComponent } from './shared/components/features-components/features-datas/features-datas.component';
-
-
+import { InviteComponent } from './shared/components/generics-components/invite/invite.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +40,7 @@ import { FeaturesDatasComponent } from './shared/components/features-components/
     MountainComponent,
     ApresentationFeaturesComponent,
     FeaturesDatasComponent,
+    InviteComponent,
   ],
   imports: [
     BrowserModule,
