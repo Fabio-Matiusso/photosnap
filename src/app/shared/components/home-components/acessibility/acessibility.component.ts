@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acessibility.component.scss'],
 })
 export class AcessibilityComponent implements OnInit {
-
   public acessibility: Array<{
     title: string;
     description: string;

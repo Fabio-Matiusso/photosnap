@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { slideInLeftOnEnterAnimation } from 'angular-animations';
 
 @Component({
@@ -8,7 +9,11 @@ import { slideInLeftOnEnterAnimation } from 'angular-animations';
   animations: [slideInLeftOnEnterAnimation()],
 })
 export class ApresentationFeaturesComponent implements OnInit {
-  constructor() {}
+  public currentRoute: string;
+
+  constructor(private router: Router) {
+    this.currentRoute = router.url;
+  }
 
   ngOnInit(): void {}
 }

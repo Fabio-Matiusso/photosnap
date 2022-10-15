@@ -18,9 +18,10 @@ import { DetailsComponent } from './shared/components/home-components/details/de
 import { FooterComponent } from './shared/components/generics-components/footer/footer.component';
 import { StoriesComponent } from './pages/stories/stories.component';
 import { MountainComponent } from './shared/components/stories-components/mountain/mountain.component';
-import { ApresentationFeaturesComponent } from './shared/components/features-components/apresentation-features/apresentation-features.component';
+import { ApresentationFeaturesComponent } from './shared/components/generics-components/apresentation-features/apresentation-features.component';
 import { FeaturesDatasComponent } from './shared/components/features-components/features-datas/features-datas.component';
 import { InviteComponent } from './shared/components/generics-components/invite/invite.component';
+import { CardPricesComponent } from './shared/components/prices-components/card-prices/card-prices.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { InviteComponent } from './shared/components/generics-components/invite/
     ApresentationFeaturesComponent,
     FeaturesDatasComponent,
     InviteComponent,
+    CardPricesComponent,
   ],
   imports: [
     BrowserModule,

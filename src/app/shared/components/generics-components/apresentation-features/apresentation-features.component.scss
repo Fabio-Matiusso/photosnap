@@ -39,19 +39,17 @@
 }
 
 .image {
-  background: url('../../../../../assets/features/desktop/hero.png');
   grid-column: span 6;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   
   @media (max-width: 900px){
-    background: url('../../../../../assets/features/tablet/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   @media (max-width: 600px){
-    background: url('../../../../../assets/features/mobile/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
