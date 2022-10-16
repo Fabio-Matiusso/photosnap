@@ -22,6 +22,7 @@ import { ApresentationFeaturesComponent } from './shared/components/generics-com
 import { FeaturesDatasComponent } from './shared/components/features-components/features-datas/features-datas.component';
 import { InviteComponent } from './shared/components/generics-components/invite/invite.component';
 import { CardPricesComponent } from './shared/components/prices-components/card-prices/card-prices.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { CardPricesComponent } from './shared/components/prices-components/card-
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

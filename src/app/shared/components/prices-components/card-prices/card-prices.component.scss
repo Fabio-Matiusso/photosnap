@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.slide-button {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  grid-column: span 12;
+  justify-content: center;
+}
