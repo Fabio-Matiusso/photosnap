@@ -2,13 +2,50 @@
 
   <div class="slide-button">
 
-    <p class="plan">Monthly</p>
+    <p class="time-plan">Monthly</p>
 
     <mat-slide-toggle [checked]="checked" [disabled]="disabled" color="primary" (change)="changeContent()">
 
     </mat-slide-toggle>
 
-    <p class="plan">Monthly</p>
+    <p class="time-plan">Yearly</p>
   </div>
+
+  <div class="container-plans">
+    <div class="plan">
+      <h3 class="title">{{plansAndDescription.basic.plan}}</h3>
+      <p class="description">
+        {{plansAndDescription.basic.description}}
+      </p>
+      <p class="price-plan">{{prices.yearly.basic}}</p>
+      <p class="duration">{{timing}}</p>
+
+      <button class="btn btn-width">{{ctaButtonText}}</button>
+
+    </div>
+    <div class="plan dark">
+      <h3 class="title">{{plansAndDescription.pro.plan}}</h3>
+      <p class="description">
+        {{plansAndDescription.pro.description}}
+      </p>
+      <p class="price-plan">{{prices.yearly.pro}}</p>
+      <p class="duration">{{timing}}</p>
+
+      <button class="btn btn-width btn-dark">{{ctaButtonText}}</button>
+
+    </div>
+    <div class="plan">
+      <h3 class="title">{{plansAndDescription.business.plan}}</h3>
+      <p class="description">
+        {{plansAndDescription.business.description}}
+      </p>
+      <p class="price-plan">{{prices.yearly.business}}</p>
+      <p class="duration">{{timing}}</p>
+
+      <button class="btn btn-width">{{ctaButtonText}}</button>
+
+    </div>
+  </div>
+
 
 </section>
