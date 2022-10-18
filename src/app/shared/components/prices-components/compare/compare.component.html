@@ -2,37 +2,30 @@
   <h1>COMPARE</h1>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
-    <!-- Position Column -->
     <ng-container matColumnDef="position">
       <th mat-header-cell *matHeaderCellDef> THE FEATURES </th>
       <td mat-cell *matCellDef="let element"> {{element.feature}} </td>
     </ng-container>
 
-    <!-- Name Column Basic Plan -->
     <ng-container matColumnDef="name">
       <th class="title-table" mat-header-cell *matHeaderCellDef> BASIC </th>
       <td class="title-table" mat-cell *matCellDef="let element"> <img src="{{element.basicCheck}}" alt=""> </td>
     </ng-container>
 
-    <!-- Weight Column -->
     <ng-container matColumnDef="weight">
       <th class="title-table" mat-header-cell *matHeaderCellDef> PRO </th>
       <td class="title-table" mat-cell *matCellDef="let element">
-        <img src="{{element.basicCheck}}" alt="">
-        <img src="{{element.proCheck}}" alt="">
+        <img src="{{element.basicCheck}}">
+        <img src="{{element.proCheck}}">
       </td>
     </ng-container>
 
-    <!-- Symbol Column -->
     <ng-container matColumnDef="symbol">
       <th class="title-table" mat-header-cell *matHeaderCellDef> BUSINESS </th>
       <td class="title-table" mat-cell *matCellDef="let element">
-        <img src="{{element.basicCheck}}" alt="">
-        <img src="{{element.proCheck}}" alt="">
-        <img src="{{element.businessCheck}}" alt="">
+        <img src="{{element.basicCheck}}">
+        <img src="{{element.proCheck}}">
+        <img src="{{element.businessCheck}}">
       </td>
     </ng-container>
 
